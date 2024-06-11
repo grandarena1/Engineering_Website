@@ -16,14 +16,14 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 0.25fr 3fr;
 }
 
 #header {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 10px;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
@@ -40,4 +40,26 @@ h1 {
 .company-logo {
     width: 200px;
     padding: 10px;
+    margin: 0 100px 0 0;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    margin: 5px;
+    color: rgb(80, 80, 80);
+}
+
+#navbar ul li:hover {
+    color: rgb(255, 255, 255);
+    background-color: #295eb3;
+    cursor: pointer;
+    text-decoration: underline;
 }
