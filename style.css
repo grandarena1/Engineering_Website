@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 3fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 #header {
@@ -62,4 +62,17 @@ h1 {
     background-color: #295eb3;
     cursor: pointer;
     text-decoration: underline;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.engineers {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
