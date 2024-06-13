@@ -83,6 +83,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgba(29, 29, 29, 0.712);
     width: 500px;
     height: 150px;
@@ -121,7 +122,7 @@ p {
     filter: drop-shadow(16px 16px 20px black);
 }
 
-.white {
+.white, a:hover {
     color: white;
 }
 
@@ -149,4 +150,13 @@ p {
 
 #footer p {
     font-size: 16px;
+}
+
+a {
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 4px rgb(47, 57, 197));
+    color: #6fa2f5;
 }
