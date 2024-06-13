@@ -30,11 +30,10 @@ body {
 h1 {
     font-weight: 900;
     font-size: 25px;
-    letter-spacing: 1.5px;
-    color: #224070;
+    letter-spacing: 4px;
+    color: #ffffff;
     text-align: center;
     padding: 10px 40px;
-    background-color: #c3cfe2;
 }
 
 .company-logo {
@@ -75,4 +74,18 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: blur(4px);
+}
+
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(29, 29, 29, 0.712);
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    border: 2px solid rgb(255, 255, 255);
+    filter: drop-shadow(16px 16px 20px rgb(55, 93, 197));
+    border-radius: 20px;
 }
