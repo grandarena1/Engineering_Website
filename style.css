@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 125px 1fr auto;
 }
 
 #header {
@@ -68,6 +68,7 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    height: calc(100vh - 125px);
 }
 
 .engineers {
@@ -88,4 +89,37 @@ h1 {
     border: 2px solid rgb(255, 255, 255);
     filter: drop-shadow(16px 16px 20px rgb(55, 93, 197));
     border-radius: 20px;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(64, 62, 156);
+    padding: 40px 40px 40px 100px;
+}
+
+hr {
+    border-color: rgb(255, 255, 255);
+    width: 500px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.4;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    filter: drop-shadow(16px 16px 20px black);
+}
+
+.white {
+    color: white;
 }
